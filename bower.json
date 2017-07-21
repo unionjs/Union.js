@@ -1,0 +1,17 @@
+{
+  "name": "union",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "荒川友人 <u.jin.arakawa@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/TomohitoArakawa/union.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>union.jsのサンプル | 荒川 友人</title>
+    <style media="screen">
+      #union {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 667px) {
+        #union {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="union"></div>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/union.min.js"></script>
+    <script>
+    $('#union').union({
+      'url': '../assets/sample_arakawa.svg',
+      'duration': '2s',
+      'easing': 'ease-out',
+      'setTimeout': '1000'
+    });
+    </script>
+  </body>
+</html>

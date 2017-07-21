@@ -1,0 +1,9 @@
+node_modules/*
+app/bower_components/jquery/*
+!app/bower_components/jquery/dist/
+app/bower_components/jquery/dist/core.js
+app/bower_components/jquery/dist/jquery.js
+app/bower_components/jquery/dist/jquery.min.map
+app/bower_components/jquery/dist/jquery.slim.js
+app/bower_components/jquery/dist/jquery.slim.min.js
+app/bower_components/jquery/dist/jquery.slim.min.map
