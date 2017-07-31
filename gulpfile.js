@@ -14,7 +14,7 @@ gulp.task('server' , function () {
     port: 8282,
     server: {
       baseDir: './app/',
-      index: 'sample_lion.html'
+      index: 'index.html'
     },
     open: 'external'
   });
@@ -25,7 +25,7 @@ gulp.task('reload', function () {
 });
 
 gulp.task('sass' , function () {
-  return gulp.src('./app/scss/**/*.scss')
+  return gulp.src('./app/scss/style.scss')
   .pipe(plumber())
   .pipe(sass())
   .pipe(autoprefixer({
@@ -49,7 +49,7 @@ gulp.task('js' , function () {
 gulp.task('build', ['sass', 'js'], function() {});
 
 gulp.task('watch', function () {
-  gulp.watch('./app/*.html', function () {
+  gulp.watch('./app/**/*.html', function () {
     runSequence('reload');
   });
   gulp.watch('./app/scss/**/*.scss', function () {

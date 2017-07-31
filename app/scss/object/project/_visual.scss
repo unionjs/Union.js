@@ -1,0 +1,37 @@
+
+.p-visual {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 315px;
+  background-color: $color-pale-gray;
+}
+.p-visual-inner {
+  display: flex;
+  align-items: center;
+  width: 980px;
+  height: inherit;
+  margin: 0 auto;
+  background-image: url(../img/all_visual.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-visual__logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 115px;
+}
+.p-visual__logo svg {
+  width: inherit;
+  height: inherit;
+}
+.p-visual__heading {
+  margin-top: -1em;
+}
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .l-visual {
+  }
+}

@@ -1,0 +1,18 @@
+.p-summary {
+  .u-text--size_l {
+    margin-top: 1.5em;
+    color: $color-light-black;
+  }
+  .u-margin-top--0 {
+    margin-top: 0;
+  }
+}
+.p-summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $space-m;
+  &:last-of-type {
+    margin-bottom: $space-l;
+  }
+}

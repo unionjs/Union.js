@@ -1,0 +1,33 @@
+.c-heading {
+  position: relative;
+  &:before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding-right: 6px;
+    vertical-align: text-top;
+  }
+  .c-heading__date {
+    position: absolute;
+    top: 25%;
+    right: 0;
+  }
+  &--setting {
+    @extend .c-heading;
+    &:before {
+      content: url('../img/icon_setting_outline.svg');
+    }
+  }
+  &--option {
+    @extend .c-heading;
+    &:before {
+      content: url('../img/icon_option_outline.svg');
+    }
+  }
+  &--browser {
+    @extend .c-heading;
+    &:before {
+      content: url('../img/icon_browser_lighter.svg');
+    }
+  }
+}

@@ -1,0 +1,17 @@
+body {
+  overflow-x: hidden;
+  font-size: $font-m;
+  font-weight: lighter;
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  line-height: $line-height-m;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+a {
+  color: $color-cian;
+  transition: $transition-hover;
+  &:hover {
+    opacity: .75;
+  }
+}

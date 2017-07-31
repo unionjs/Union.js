@@ -1,0 +1,32 @@
+.p-title {
+  margin: $space-l 0;
+}
+.p-title__heading {
+  margin-bottom: $space-m;
+  .p-title__heading-name {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    color: $color-light-black;
+    text-align: center;
+  }
+  .p-title__heading-version {
+    position: absolute;
+    top: 25%;
+    padding: $space-xs;
+    color: $color-dark-gray;
+  }
+  .p-title__heading-copy {
+    display: block;
+    color: $color-light-black;
+    text-align: center;
+  }
+}
+.p-title__button {
+  display: flex;
+  width: 506px;
+  margin: 0 auto;
+  .p-title__button-tutorial {
+    margin: 0 10px;
+  }
+}

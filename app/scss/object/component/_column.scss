@@ -1,0 +1,43 @@
+.c-column {
+  display: table;
+  width: 330px;
+  height: 196px;
+  padding: $space-xs;
+  &--gray {
+    @extend .c-column;
+    background-color: $color-pale-gray;
+    background-size: 275px 275px;
+    background-repeat: no-repeat;
+    &_mit {
+      @extend .c-column--gray;
+      background-image: url(../img/icon_licence_arakawa.svg);
+      background-position: right -50px center;
+    }
+    &_browser {
+      @extend .c-column--gray;
+      background-image: url(../img/icon_browser_bold.svg);
+      background-position: right -50px center;
+    }
+  }
+  svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
+  }
+}
+.c-column-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.c-column-footer {
+  display: table-row;
+  height: 1em;
+  text-align: right;
+  vertical-align: bottom;
+  a {
+    padding-left: $space-xs;
+  }
+}

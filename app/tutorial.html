@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1280">
+    <title>tutorial | Union.js</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-header__logo">
+        <a href="./index.html"></a>
+      </div>
+      <div class="l-header__button">
+        <a href="#" class="c-button--magenta_outline">download</a>
+        <a href="https://github.com/unionjs/Union.js" class="c-button--black_outline">github</a>
+      </div>
+    </header>
+    <div class="p-visual">
+      <div class="p-visual-inner">
+        <h1 class="p-visual__heading u-text--size_2xl">tutorial</h1>
+      </div>
+    </div>
+    <div class="l-wrapper">
+      <div class="l-content">
+        <div class="p-tutorial">
+          <section class="p-tutorial-category">
+            <h2 id="setting" class="c-heading--setting u-text--size_xl">setting<span class="c-heading__date u-text--size_s">last updated 2017-8-01</span></h2>
+            <div class="p-tutorial-category-step">
+              <h3 class="u-text--size_l">step1</h3>
+              <p class="u-text--size_m">Please create image data in svg format.</p>
+              <figure class="p-tutorial__image">
+                <img src="../img/tutorial_step_01.png" alt="create image data">
+              </figure>
+            </div>
+            <div class="p-tutorial-category-step">
+              <h3 class="u-text--size_l">step2</h3>
+              <p class="u-text--size_m">Please load a jQuery and an Union.js.</p>
+<pre class="c-code"><code>
+<span class="c-code__number">1</span><span class="c-code__comment">&lt;!DOCTYPE html&gt;</span>
+<span class="c-code__number">2</span>&lt;html&gt;
+<span class="c-code__number">3</span>    &lt;head&gt;
+<span class="c-code__number">4</span>        &lt;meta charset=“UTF-8”&gt;
+<span class="c-code__number">5</span>        &lt;title&gt;setting&lt;/title&gt;
+<span class="c-code__number">6</span>    &lt;/head&gt;
+<span class="c-code__number">7</span>    &lt;body&gt;
+<span class="c-code__number">8</span>        &lt;div&gt;<span class="c-code__comment">&lt;!— display here —&gt;</span>&lt;/div&gt;
+<span class="c-code-row--active"><span class="c-code__number--active">9</span>        &lt;script src=“jquery.js”&gt;&lt;/script&gt;</span>
+<span class="c-code-row--active"><span class="c-code__number--active">10</span>        &lt;script src=“union.js”&gt;&lt;/script&gt;</span>
+<span class="c-code__number">11</span>    &lt;/body&gt;
+<span class="c-code__number">12</span>&lt;/html&gt;
+</code></pre>
+            </div>
+            <div class="p-tutorial-category-step">
+              <h3 class="u-text--size_l">step3</h3>
+              <p class="u-text--size_m">Specified the function as the selectors, Please load a svg file.</p>
+<pre class="c-code"><code>
+<span class="c-code__number">1</span>    <span class="c-code__comment">…</span>
+<span class="c-code__number">2</span>    &lt;body&gt;
+<span class="c-code-row--active"><span class="c-code__number--active">3</span>        &lt;div id="union"&gt;<span class="c-code__comment">&lt;!— display here —&gt;</span>&lt;/div&gt;</span>
+<span class="c-code__number">4</span>        &lt;script src=“jquery.js”&gt;&lt;/script&gt;
+<span class="c-code__number">5</span>        &lt;script src=“union.js”&gt;&lt;/script&gt;
+<span class="c-code-row--active"><span class="c-code__number--active">6</span>        &lt;script&gt;</span>
+<span class="c-code-row--active"><span class="c-code__number--active">7</span>                $("#union").union({</span>
+<span class="c-code-row--active"><span class="c-code__number--active">8</span>                  "url": "./sample_robot.svg"</span>
+<span class="c-code-row--active"><span class="c-code__number--active">9</span>                });</span>
+<span class="c-code-row--active"><span class="c-code__number--active">10</span>        &lt;/script&gt;</span>
+<span class="c-code__number">11</span>    &lt;/body&gt;
+<span class="c-code__number">12</span>&lt;/html&gt;
+</code></pre>
+            </div>
+          </section>
+          <section class="p-tutorial-category">
+            <h2 id="option" class="c-heading--option u-text--size_xl">option<span class="c-heading__date u-text--size_s">last updated 2017-8-01</span></h2>
+<pre class="c-code u-margin-bottom--s"><code>
+<span class="c-code__number">1</span>        <span class="c-code__comment">…</span>
+<span class="c-code__number">2</span>        &lt;script src=“union.js”&gt;&lt;/script&gt;
+<span class="c-code__number">3</span>        &lt;script&gt;
+<span class="c-code__number">4</span>                $("#union").union({
+<span class="c-code-row--active"><span class="c-code__number--active">5</span>                  “url”: “./sample_robot.svg”, <span class="c-code__comment">// path of image file</span></span>
+<span class="c-code-row--active"><span class="c-code__number--active">6</span>                  “duration”: “3s”, <span class="c-code__comment">// value of transiton time</span></span>
+<span class="c-code-row--active"><span class="c-code__number--active">7</span>                  “easing”: “ease-in-out”, <span class="c-code__comment">// patarn of transition timing</span></span>
+<span class="c-code-row--active"><span class="c-code__number--active">8</span>                  “setTimeout”: “1500” <span class="c-code__comment">// value of transition start time</span></span>
+<span class="c-code__number">9</span>                });
+<span class="c-code__number">10</span>        &lt;/script&gt;
+<span class="c-code__number">11</span>    &lt;/body&gt;
+<span class="c-code__number">12</span>&lt;/html&gt;
+</code></pre>
+            <table class="c-table--option">
+              <thead class="c-table--option-thead">
+                <tr class="c-table--option-thead__row">
+                  <th width="110" class="c-table--option-thead__cell">name</th>
+                  <th width="110" class="c-table--option-thead__cell">type</th>
+                  <th width="110" class="c-table--option-thead__cell">initial</th>
+                  <th width="410" class="c-table--option-thead__cell">customize</th>
+                </tr>
+              </thead>
+              <tbody class="c-table--option-body">
+                <tr class="c-table--option-tbody__row">
+                  <td class="c-table--option-tbody__cell">url</td>
+                  <td class="c-table--option-tbody__cell">string</td>
+                  <td class="c-table--option-tbody__cell">Nan</td>
+                  <td class="c-table--option-tbody__cell">
+                    <p>This property is specifies image file path. <span class="u-text--color_magenta">You must specify.</span></p>
+                  </td>
+                </tr>
+                <tr class="c-table--option-tbody__row">
+                  <td class="c-table--option-tbody__cell">duration</td>
+                  <td class="c-table--option-tbody__cell">string</td>
+                  <td class="c-table--option-tbody__cell">0.5s</td>
+                  <td class="c-table--option-tbody__cell">
+                    <p class="u-margin-bottom--xs">
+                      This property is specifies transition time.<br>
+                      It becomes slow as the number becomes number larger.<br>
+                      <span class="u-text--size_s">It is the same as "<a href="https://www.w3.org/TR/css3-transitions/#transition-duration-property" target="_blank" class="u-link--type_external">transition-duration</a>" of css3.</span>
+                    </p>
+                    <ul class="u-list--style_square">
+                      <li>unit -> <span class="u-text--color_black">seconds</span></li>
+                      <li>Decimal point  -> <span class="u-text--color_black">OK</span></li>
+                      <li>Negative value -> <span class="u-text--color_magenta">NG</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="c-table--option-tbody__row">
+                  <td class="c-table--option-tbody__cell">easing</td>
+                  <td class="c-table--option-tbody__cell">string</td>
+                  <td class="c-table--option-tbody__cell">ease</td>
+                  <td class="c-table--option-tbody__cell">
+                    <p class="u-margin-bottom--xs">
+                      This property is specifies transition timing.<br>
+                      Please choose from the following.<br>
+                      <span class="u-text--size_s">It is the same as "<a href="https://www.w3.org/TR/css3-transitions/#transition-timing-function-property" target="_blank" class="u-link--type_external">transition-timing-function</a>" of css3.</span>
+                    </p>
+                    <div class="u-text--size_0">
+                      <span class="c-tag">ease</span>
+                      <span class="c-tag">linear</span>
+                      <span class="c-tag">ease-in</span>
+                      <span class="c-tag">ease-out</span>
+                      <span class="c-tag">ease-in-out</span>
+                      <span class="c-tag">cubic-bezier(x1, y1, x2, y2)</span>
+                      <span class="c-tag">steps(number_of_steps, direction)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="c-table--option-tbody__row">
+                  <td class="c-table--option-tbody__cell">setTimeout</td>
+                  <td class="c-table--option-tbody__cell">number</td>
+                  <td class="c-table--option-tbody__cell">1000</td>
+                  <td class="c-table--option-tbody__cell">
+                    <p class="u-margin-bottom--xs">
+                      This property is specifies transition start time.<br>
+                      It becomes delay as the number becomes number larger.
+                    </p>
+                    <ul class="u-list--style_square">
+                      <li>unit -> <span class="u-text--color_black">millisecond</span></li>
+                      <li>Decimal point  -> <span class="u-text--color_magenta">NG</span></li>
+                      <li>Negative value -> <span class="u-text--color_magenta">NG</span></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="p-tutorial-category">
+            <h2 id="browser" class="c-heading--browser u-text--size_xl">supported browsers<span class="c-heading__date u-text--size_s">last updated 2017-8-01</span></h2>
+            <table class="c-table--browser">
+              <thead class="c-table--browser-thead">
+                <tr class="c-table--browser-thead__row">
+                  <th width="88.5" class="c-table--browser-thead__cell">Chrome</th>
+                  <th width="88.5" class="c-table--browser-thead__cell">Safari</th>
+                  <th width="88.5" class="c-table--browser-thead__cell">Firefox</th>
+                  <th width="88.5" class="c-table--browser-thead__cell">Opera</th>
+                  <th width="88.5" class="c-table--browser-thead__cell">IE</th>
+                  <th width="88.5" class="c-table--browser-thead__cell">Android</th>
+                  <th width="88.5" class="c-table--browser-thead__cell">ios Safari</th>
+                </tr>
+              </thead>
+              <tbody class="c-table--browser-tbody">
+                <tr class="c-table--browser-tbody__row">
+                  <td class="c-table--browser-tbody__cell">4+</td>
+                  <td class="c-table--browser-tbody__cell">5.1+</td>
+                  <td class="c-table--browser-tbody__cell">5+</td>
+                  <td class="c-table--browser-tbody__cell">12.1+</td>
+                  <td class="c-table--browser-tbody__cell">10+</td>
+                  <td class="c-table--browser-tbody__cell"><!--2.1+--><span class="u-text--color_magenta">unchecked</span></td>
+                  <td class="c-table--browser-tbody__cell">6.1+</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="l-footer">&copy; 2017 Tomohito Arakawa</footer>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/union.min.js"></script>
+    <script>
+    // $('#union-01').union({
+    //   'url': './img/p-jackun--polygon.svg',
+    //   'duration': '3s',
+    //   'easing': 'linear',
+    //   'setTimeout': '1000'
+    // });
+    </script>
+  </body>
+</html>

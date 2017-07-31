@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1280">
+    <title>DEMO03 - Arakawa | Union.js</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style media="screen">
+      #union {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 667px) {
+        #union {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-header__logo">
+        <a href="../index.html"></a>
+      </div>
+      <div class="l-header__button">
+        <a href="#" class="c-button--magenta_outline">download</a>
+        <a href="https://github.com/unionjs/Union.js" class="c-button--black_outline">github</a>
+      </div>
+    </header>
+    <div class="p-visual">
+      <div class="p-visual-inner">
+        <h1 class="p-visual__heading u-text--size_2xl">demo</h1>
+      </div>
+    </div>
+    <div class="l-wrapper">
+      <div class="l-content">
+        <div id="union"></div>
+      </div>
+    </div>
+    <footer class="l-footer">&copy; 2017 Tomohito Arakawa</footer>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/union.min.js"></script>
+    <script>
+    $('#union').union({
+      'url': '../assets/sample_arakawa.svg',
+      'duration': '2s',
+      'easing': 'ease-out',
+      'setTimeout': '1000'
+    });
+    </script>
+  </body>
+</html>

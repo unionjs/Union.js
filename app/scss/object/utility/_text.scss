@@ -1,0 +1,47 @@
+.u-text {
+  color: $color-dark-gray;
+  &--size_3xl {
+    @extend .u-text;
+    font-size: $font-3xl;
+  }
+  &--size_2xl {
+    @extend .u-text;
+    font-size: $font-2xl;
+  }
+  &--size_xl {
+    @extend .u-text;
+    font-size: $font-xl;
+  }
+  &--size_l {
+    @extend .u-text;
+    font-size: $font-l;
+  }
+  &--size_m {
+    @extend .u-text;
+    font-size: $font-m;
+  }
+  &--size_s {
+    @extend .u-text;
+    font-size: $font-s;
+  }
+  &--size_xs {
+    @extend .u-text;
+    font-size: $font-xs;
+  }
+  &--size_0 {
+    @extend .u-text;
+    font-size: 0;
+  }
+  &--color_white {
+    color: $color-white;
+  }
+  &--color_black {
+    color: $color-light-black;
+  }
+  &--color_cian {
+    color: $color-cian;
+  }
+  &--color_magenta {
+    color: $color-magenta;
+  }
+}

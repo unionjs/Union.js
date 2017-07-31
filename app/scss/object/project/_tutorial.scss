@@ -1,0 +1,31 @@
+.p-tutorial {
+  .c-heading {
+    margin-bottom: $space-s;
+  }
+}
+.p-tutorial-category {
+  margin-bottom: $space-l;
+  &:last-of-type {
+    margin-bottom: $space-m;
+  }
+}
+.p-tutorial-category-step {
+  margin-bottom: $space-m;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.p-tutorial-category-step > .u-text--size_l {
+  color: $color-light-black;
+}
+.p-tutorial-category-step > .u-text--size_l + .u-text--size_m {
+  margin-bottom: $space-xs;
+}
+.p-tutorial__image {
+  width: 480px;
+  height: 296px;
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}

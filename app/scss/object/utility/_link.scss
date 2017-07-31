@@ -1,0 +1,12 @@
+.u-link {
+  &--type_external {
+    &:after {
+      display: inline-block;
+      content: url('../img/icon_link_external.svg');
+      width: 12px;
+      height: 12px;
+      padding-left: 3px;
+      vertical-align: sub;
+    }
+  }
+}

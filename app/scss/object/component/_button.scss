@@ -1,0 +1,42 @@
+.c-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+  height: 50px;
+  font-size: $font-l;
+  color: $color-white;
+  text-decoration: none;
+  box-shadow: $shadow-gray;
+  &--magenta {
+    @extend .c-button;
+    background-color: $color-magenta;
+    &_outline {
+      @extend .c-button;
+      color: $color-magenta;
+      background-color: $color-white;
+      border: 1px solid $color-magenta;
+    }
+  }
+  &--cian {
+    @extend .c-button;
+    background-color: $color-cian;
+    &_outline {
+      @extend .c-button;
+      color: $color-cian;
+      background-color: $color-white;
+      border: 1px solid $color-cian;
+    }
+  }
+  &--black {
+    @extend .c-button;
+    background-color: $color-black;
+    &_outline {
+      @extend .c-button;
+      color: $color-black;
+      background-color: $color-white;
+      border: 1px solid $color-black;
+    }
+  }
+}

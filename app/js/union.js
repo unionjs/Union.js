@@ -1,11 +1,11 @@
 /*!
  * Union.js
- * https://tomohitoarakawa.github.io/unionjs/app/
- * Version: 1.0.0
+ * https://unionjs.github.io/
+ * Version: Public Beta
  *
- * Copyright 2017 Toohito Arakawa
+ * Copyright 2017 Tomohito Arakawa
  * Released under the MIT license
- * https://github.com/TomohitoArakawa/unionjs/master/LICENSE.md
+ * https://github.com/unionjs/Union.js/blob/master/LICENSE
  */
 (function($){
 
@@ -13,7 +13,7 @@
 
     var setting = $.extend({
       'target': $(this),
-      'url': 'null',
+      'url': '',
       'duration': '.5s',
       'easing': 'ease',
       'setTimeout': '1000'
@@ -54,9 +54,9 @@
 
     setTimeout(function(){
       setting.target.find('svg *').css({
-        'msTransform': 'rotateZ(' + 0 + 'deg) translate(' + 0 + 'px , ' + 0 + 'px)',
-        'webkitTransform': 'rotateZ(' + 0 + 'deg) translate(' + 0 + 'px , ' + 0 + 'px)',
-        'transform': 'rotateZ(' + 0 + 'deg) translate(' + 0 + 'px , ' + 0 + 'px)',
+        'msTransform': 'translate(' + 0 + 'px , ' + 0 + 'px)',
+        'webkitTransform': 'translate(' + 0 + 'px , ' + 0 + 'px)',
+        'transform': 'translate(' + 0 + 'px , ' + 0 + 'px)',
       })
     },setting.setTimeout);
 

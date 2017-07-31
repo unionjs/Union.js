@@ -1,0 +1,42 @@
+//color
+$color-white: #ffffff;
+$color-white-opacity: rgba(255,255,255,.5);
+$color-pale-gray: #f4f4f4;
+$color-light-gray: #e5e5e5;
+$color-gray: #cacaca;
+$color-dark-gray: #888888;
+$color-light-black: #333333;
+$color-black: #24292e;
+$color-cian: #00a0e9;
+$color-cian-opacity: rgba(0,160,233,.1);
+$color-magenta: #e4007f;
+
+//font-size
+$font-xs: 10px;
+$font-s: 12px;
+$font-m: 14px;
+$font-l: 16px;
+$font-xl: 24px;
+$font-2xl: 36px;
+$font-3xl: 48px;
+
+//line-height
+$line-height-s: 1;
+$line-height-m: 1.5;
+$line-height-l: 1.7;
+
+//margin padding
+$space-xs: 10px;
+$space-s: 20px;
+$space-m: 40px;
+$space-l: 80px;
+$space-xl: 160px;
+
+//border-radius
+$radius-xs: 2.5px;
+
+//box-shadow
+$shadow-gray: 2px 4px 2px rgba(136,136,136,.15);
+
+//trasintion
+$transition-hover: all .3s ease-out;

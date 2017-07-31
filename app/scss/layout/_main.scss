@@ -1,0 +1,22 @@
+.l-wrapper {
+  width: 100%;
+}
+.l-content {
+  width: 900px;
+  margin: -105px auto 0;
+  padding: $space-m;
+  background-color: $color-white;
+  border: 1px solid $color-pale_gray;
+  box-shadow: $shadow-gray;
+  &--narrow {
+    @extend .l-content;
+    width: 720px;
+  }
+}
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .l-content {
+    width: 100%;
+  }
+}

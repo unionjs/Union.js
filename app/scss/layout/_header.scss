@@ -1,0 +1,32 @@
+.l-header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 $space-xs;
+  background-color: $color-white-opacity;
+  box-shadow: $shadow-gray;
+}
+.l-header__logo {
+  a {
+    display: block;
+    width: 112px;
+    height: 42.5px;
+    background-image: url(../img/header_logo_small.svg);
+    background-repeat: no-repeat;
+  }
+}
+.l-header__button {
+  display: flex;
+  justify-content: space-between;
+  width: 194.4px;
+  .c-button--magenta_outline, .c-button--black_outline {
+    width: 92.2px;
+    height: 30px;
+    box-shadow: none;
+  }
+}

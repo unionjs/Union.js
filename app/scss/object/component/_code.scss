@@ -1,0 +1,29 @@
+.c-code {
+  margin-top: -1.5em;
+  padding: 0;
+}
+.c-code__number {
+  display: inline-block;
+  width: 2em;
+  margin-right: 1em;
+  padding: 0 .5em 0 1em;
+  text-align: right;
+  border-right: 2px solid $color-cian;
+  background-color: $color-pale-gray;
+  user-select: none;
+  &--active {
+    @extend .c-code__number;
+    color: $color-cian;
+  }
+}
+.c-code-row {
+  display: inline-block;
+  width: 100%;
+  &--active {
+    @extend .c-code-row;
+    background-color: $color-cian-opacity;
+  }
+}
+.c-code__comment {
+  color: $color-dark-gray;
+}
