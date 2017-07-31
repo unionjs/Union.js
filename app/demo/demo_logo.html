@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DEMO03 - Arakawa | Union.js</title>
+    <meta name="description" content="The function of this plugin is unite the paths of a svg file into 1 illustration by interesting animation.">
+    <meta name="keywords" content="jQuery,svg,plugin,animation,illustrator">
+    <meta name="viewport" content="width=1280">
+    <link rel="stylesheet" href="../css/style.css?20170731">
+    <style media="screen">
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+    #union {
+      width: 150px;
+      height: 150px;
+      margin-top: -150px;
+    }
+    @media screen and (max-width: 667px) {
+      #union {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <!-- <header class="l-header">
+      <div class="l-header__logo">
+        <a href="../index.html"></a>
+      </div>
+      <div class="l-header__button">
+        <a href="https://github.com/unionjs/Union.js/blob/master/union-beta.zip?raw=true" class="c-button--magenta_outline">download</a>
+        <a href="https://github.com/unionjs/Union.js" class="c-button--black_outline">github</a>
+      </div>
+    </header> -->
+    <!-- <div class="p-visual">
+      <div class="p-visual-inner">
+        <h1 class="p-visual__heading u-text--size_2xl">Union.js</h1>
+      </div>
+    </div>
+    <div class="l-wrapper">
+      <div class="l-content"> -->
+        <div id="union"></div>
+      <!-- </div>
+    </div>
+    <footer class="l-footer">&copy; 2017 Tomohito Arakawa</footer> -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/union.min.js"></script>
+    <script>
+    $('#union').union({
+      'url': '../img/index_logo.svg',
+      'duration': '5s',
+      'easing': 'ease-out',
+      'setTimeout': '3000'
+    });
+    </script>
+  </body>
+</html>
