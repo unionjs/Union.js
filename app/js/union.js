@@ -1,6 +1,6 @@
 /*!
  * Union.js
- * https://unionjs.github.io/
+ * https://unionjs.github.io/app/
  * Version: Public Beta
  *
  * Copyright 2017 Tomohito Arakawa
