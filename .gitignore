@@ -1,4 +1,5 @@
 node_modules/*
+app/demo/demo_logo.html
 app/bower_components/jquery/*
 !app/bower_components/jquery/dist/
 app/bower_components/jquery/dist/core.js
